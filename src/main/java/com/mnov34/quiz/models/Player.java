@@ -1,4 +1,4 @@
-package main.java.com.mnov34.quiz.models;
+package com.mnov34.quiz.models;
 
 /**
  * @author Maël NOUVEL <br>

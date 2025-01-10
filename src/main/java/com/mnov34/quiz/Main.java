@@ -1,7 +1,7 @@
-package main.java.com.mnov34.quiz;
+package com.mnov34.quiz;
 
-import main.java.com.mnov34.quiz.services.*;
-import main.java.com.mnov34.quiz.services.impl.*;
+import com.mnov34.quiz.services.*;
+import com.mnov34.quiz.services.impl.*;
 
 /**
  * @author Maël NOUVEL <br>
@@ -13,8 +13,11 @@ public class Main {
         QuizService quizService = new QuizServiceImpl();
         PlayerService playerService = new PlayerServiceImpl();
         ScoreService scoreService = new ScoreServiceImpl();
+        LoggingService loggingService = LoggingServiceImpl.getInstance();
 
-        GameService gameService = new GameServiceImpl(quizService, validatorService, playerService, scoreService);
+        GameService gameService = new GameServiceImpl(
+                quizService, validatorService,
+                playerService, scoreService, loggingService);
 
         gameService.runGame();
     }

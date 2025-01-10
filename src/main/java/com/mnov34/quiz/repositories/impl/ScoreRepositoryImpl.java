@@ -1,7 +1,7 @@
-package main.java.com.mnov34.quiz.repositories.impl;
+package com.mnov34.quiz.repositories.impl;
 
-import main.java.com.mnov34.quiz.config.Database;
-import main.java.com.mnov34.quiz.repositories.ScoreRepository;
+import com.mnov34.quiz.config.Database;
+import com.mnov34.quiz.repositories.ScoreRepository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

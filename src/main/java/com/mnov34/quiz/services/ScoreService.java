@@ -1,4 +1,4 @@
-package main.java.com.mnov34.quiz.services;
+package com.mnov34.quiz.services;
 
 import java.util.List;
 

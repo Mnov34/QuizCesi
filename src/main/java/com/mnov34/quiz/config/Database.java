@@ -1,4 +1,4 @@
-package main.java.com.mnov34.quiz.config;
+package com.mnov34.quiz.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,6 +1,6 @@
-package main.java.com.mnov34.quiz.repositories;
+package com.mnov34.quiz.repositories;
 
-import main.java.com.mnov34.quiz.models.Question;
+import com.mnov34.quiz.models.Question;
 
 import java.util.List;
 

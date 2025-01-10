@@ -1,9 +1,9 @@
-package main.java.com.mnov34.quiz.services.impl;
+package com.mnov34.quiz.services.impl;
 
-import main.java.com.mnov34.quiz.models.Answer;
-import main.java.com.mnov34.quiz.models.Player;
-import main.java.com.mnov34.quiz.models.Question;
-import main.java.com.mnov34.quiz.services.*;
+import com.mnov34.quiz.models.Answer;
+import com.mnov34.quiz.models.Player;
+import com.mnov34.quiz.models.Question;
+import com.mnov34.quiz.services.*;
 
 import java.util.List;
 import java.util.Scanner;
@@ -24,15 +24,18 @@ public class GameServiceImpl implements GameService {
     private final ValidatorService validatorService;
     private final PlayerService playerService;
     private final ScoreService scoreService;
+    private final LoggingService LOG;
 
     public GameServiceImpl(QuizService quizService,
                            ValidatorService validatorService,
                            PlayerService playerService,
-                           ScoreService scoreService) {
+                           ScoreService scoreService,
+                           LoggingService LOG) {
         this.quizService = quizService;
         this.validatorService = validatorService;
         this.playerService = playerService;
         this.scoreService = scoreService;
+        this.LOG = LOG;
     }
 
     @Override
@@ -74,6 +77,8 @@ public class GameServiceImpl implements GameService {
 
                 System.out.print("Your choice: ");
                 String userInput = scanner.nextLine().trim();
+
+                while (userInput.isEmpty()) userInput = scanner.nextLine().trim();
 
                 if (validatorService.isAnswerCorrect(question.getAnswers(), userInput)) {
                     score++;

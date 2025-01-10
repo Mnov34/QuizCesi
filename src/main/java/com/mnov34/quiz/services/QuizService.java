@@ -1,6 +1,6 @@
-package main.java.com.mnov34.quiz.services;
+package com.mnov34.quiz.services;
 
-import main.java.com.mnov34.quiz.models.Question;
+import com.mnov34.quiz.models.Question;
 
 import java.util.List;
 
@@ -10,4 +10,6 @@ import java.util.List;
  **/
 public interface QuizService {
     List<Question> loadQuiz();
+
+    int calculateScore(String[] userAnswers);
 }

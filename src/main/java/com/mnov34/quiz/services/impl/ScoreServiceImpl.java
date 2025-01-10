@@ -1,8 +1,8 @@
-package main.java.com.mnov34.quiz.services.impl;
+package com.mnov34.quiz.services.impl;
 
-import main.java.com.mnov34.quiz.repositories.ScoreRepository;
-import main.java.com.mnov34.quiz.repositories.impl.ScoreRepositoryImpl;
-import main.java.com.mnov34.quiz.services.ScoreService;
+import com.mnov34.quiz.repositories.ScoreRepository;
+import com.mnov34.quiz.repositories.impl.ScoreRepositoryImpl;
+import com.mnov34.quiz.services.ScoreService;
 
 import java.util.List;
 
@@ -30,7 +30,6 @@ public class ScoreServiceImpl implements ScoreService {
         if (scores.isEmpty()) return 0.0;
 
         double total = 0.0;
-
         for (int s : scores) total += s;
 
         return total / scores.size();

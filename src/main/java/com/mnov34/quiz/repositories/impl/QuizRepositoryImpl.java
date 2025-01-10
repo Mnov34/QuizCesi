@@ -1,9 +1,9 @@
-package main.java.com.mnov34.quiz.repositories.impl;
+package com.mnov34.quiz.repositories.impl;
 
-import main.java.com.mnov34.quiz.config.Database;
-import main.java.com.mnov34.quiz.models.Answer;
-import main.java.com.mnov34.quiz.models.Question;
-import main.java.com.mnov34.quiz.repositories.QuizRepository;
+import com.mnov34.quiz.config.Database;
+import com.mnov34.quiz.models.Answer;
+import com.mnov34.quiz.models.Question;
+import com.mnov34.quiz.repositories.QuizRepository;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

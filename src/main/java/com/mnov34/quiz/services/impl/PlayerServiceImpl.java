@@ -1,9 +1,9 @@
-package main.java.com.mnov34.quiz.services.impl;
+package com.mnov34.quiz.services.impl;
 
-import main.java.com.mnov34.quiz.models.Player;
-import main.java.com.mnov34.quiz.repositories.PlayerRepository;
-import main.java.com.mnov34.quiz.repositories.impl.PlayerRepositoryImpl;
-import main.java.com.mnov34.quiz.services.PlayerService;
+import com.mnov34.quiz.models.Player;
+import com.mnov34.quiz.repositories.PlayerRepository;
+import com.mnov34.quiz.repositories.impl.PlayerRepositoryImpl;
+import com.mnov34.quiz.services.PlayerService;
 
 import java.util.List;
 

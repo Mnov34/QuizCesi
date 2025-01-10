@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/src/main/ressources/db/schema.sql" dialect="MariaDB" />
-    <file url="file://$PROJECT_DIR$/src/main/ressources/db/userAndScoreData.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/aschema.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/userAndScoreData.sql" dialect="MariaDB" />
     <file url="PROJECT" dialect="MariaDB" />
   </component>
 </project>

@@ -1,6 +1,6 @@
-package main.java.com.mnov34.quiz.services;
+package com.mnov34.quiz.services;
 
-import main.java.com.mnov34.quiz.models.Answer;
+import com.mnov34.quiz.models.Answer;
 
 import java.util.List;
 

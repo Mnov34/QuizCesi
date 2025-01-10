@@ -1,7 +1,7 @@
-package main.java.com.mnov34.quiz.services.impl;
+package com.mnov34.quiz.services.impl;
 
-import main.java.com.mnov34.quiz.models.Answer;
-import main.java.com.mnov34.quiz.services.ValidatorService;
+import com.mnov34.quiz.models.Answer;
+import com.mnov34.quiz.services.ValidatorService;
 
 import java.util.List;
 
